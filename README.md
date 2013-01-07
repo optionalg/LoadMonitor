@@ -10,7 +10,7 @@ Current implementation tracks:
 <li>CPU (over 5 seconds)</li>
 <li>CPU temp</li>
 <li>Memory utilization (free, used, total)</li>
-<li>Disk I/O (bytes per second total for disk "sda")</li>
+<li>Disk I/O (bytes per second total for disk "sda1")</li>
 <li>Network load (tx, rx for "eth0")</li>
 </ul>
 
@@ -27,7 +27,7 @@ To use:
 
 Limitations:
 <ul>
-<li>Disk I/O only monitors the "sda" drive. If that drive doesn't exist the script will report "0" every time it runs. This code also assumes each sector is 512 bytes.</li>
+<li>Disk I/O only monitors the "sda1" drive. If that drive doesn't exist the script will report "0" every time it runs. This code also assumes each sector is 512 bytes.</li>
 <li>CPU Temp can be configured for Celsius, Fahrenheit, and Kelvin (for fun). The script is using Fahrenheit by default because I'm a lazy American who can't be bothered memorizing Celsius conversion.</li>
 <li>If this package of scripts are ever intended to run on a machine that is not a Raspberry Pi, the CPU Temp code should be ignored</li>
 <li>The network utilization code only monitors the "eth0" network interface. If that interface does not exist or is not used, a "0" will be reported every time the script runs.</li>
