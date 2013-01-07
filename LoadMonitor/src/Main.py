@@ -13,7 +13,7 @@ import NetworkLoad
 CPULOAD = CPULoad.getCpuLoad()*100.0
 MEMTOTAL, MEMFREE = MemoryLoad.getMemory()
 MEMUSED = MEMTOTAL-MEMFREE
-DISKLOAD = DiskLoad.getDiskLoad("sda")
+DISKLOAD = DiskLoad.getDiskLoad("sda1")
 TEMP = CPUTemp.getCPUtemperature('F')
 RX,TX = NetworkLoad.getNetworkLoad("eth0:")
 
