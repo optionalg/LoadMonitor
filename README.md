@@ -19,7 +19,7 @@ Project is specific to Raspberry Pi due to CPU temp monitoring.
 To use:
 <ul>
 <li>Make a copy of my google spreadsheet: https://docs.google.com/spreadsheet/ccc?key=0As-0hIWBcQmFdGZzSW1YNGdldjVybnJHYkJFeUFHRGc</li>
-<li>Go to your Google Drive account, select the copied spreadsheet and go to 'Share settings'. In the share settings copy the key from the 'Link to share' field. The key is the obscure string of characters after "key="</li>
+<li>In your copy of the spreadsheet, go to "Form -> Go to live form". When you get to the next page, copy the form key. The form key is the obscure text after "formkey=" up to the hash ("#") symbol.</li>
 <li>Edit GoogleSheet.py and paste the key into the value FORMKEY</li>
 <li>You may have to edit the ENTRIES dictionary in the event those values change; you can confirm this by going to the live form and viewing the source for each entry field.</li>
 </ul>
