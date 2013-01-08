@@ -19,8 +19,10 @@ def getDiskIO(diskAssignment):
         columns = line.split(" ")
         if columns[11] == diskAssignment:
             ioData = io(int(columns[14]),int(columns[18]))
-            
-    return ioData
+    
+    if ioData:
+        return ioData
+    return 0
 
 def deltaTime(diskAssignment, interval):
     """
